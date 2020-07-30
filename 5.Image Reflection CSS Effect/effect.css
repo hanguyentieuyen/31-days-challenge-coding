@@ -1,0 +1,36 @@
+
+.bg{
+    background-image: url('https://images.unsplash.com/photo-1578402382615-8c856f41452e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1490&q=80');
+  width: 80vw;
+  height: 60vh;
+  background-size: cover; /**Image với kích thước mặc định sẽ fix tràn hết height và width trên**/
+  background-repeat: no-repeat;
+  /**Thuộc tính background-position chỉ tác dụng khi phần tử được thiết lập thuộc tính background-position: no-repeat**/
+  background-position: right bottom; /**[chiều ngang] [chiều dọc]**/
+  /**image cố định đặt tại right bottom trên layout <div>**/
+  margin: 50px auto;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.bg:after{
+  background-size: cover;
+  background-image: inherit;  /**thừa kế giá trị gần nhất, ko cần copy link image dài**/
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  content:'';
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  bottom: -101%;
+  transform: rotateX(180deg);
+}
+.bg:before{
+  content:'';
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), #ffffff 60%, #ffffff);
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  transform: rotateX(180deg);
+  bottom: -101%;
+  z-index: 100;
+}
