@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,700&display=swap');
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Muli', sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+.loading-container{
+  background-color: #fff;  /**overlay**/
+   border: 3px solid #000; 
+  width: 400px;
+  max-width: 100%;
+  padding: 10px;
+  position: relative;
+}
+.loading-container::after{
+  background-color: #fff;
+  content:'';
+  position: absolute;
+/*   top: 40px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: difference;  */
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: difference;/**mix-blend-mode:pha trộn màu**/
+  transform: scaleX(0);
+  transform-origin: center left; 
+/**Tùy chỉnh tâm hình , dịch chuyển phần tử , X (ngang) và Y(dọc) là tọa độ tâm xoay**/
+/*Tham khảo trực quan:   https://codepen.io/bunnypi04/pen/VwwqLmj */
+  animation: loadingleft-right  5s linear infinite;
+/*  linear - chuyển động cùng 1 tốc độ từ đầu đến cuối;  
+    infinite : chạy không giới hạn số lần.
+/* tên của chuyển động:loadingleft-right */
+}
+@keyframes loadingleft-right{
+  to{
+    transform: scaleX(1);
+  }
+}
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
