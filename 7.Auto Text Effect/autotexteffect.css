@@ -1,0 +1,12 @@
+@import
+  url('http://fonts.googleaopis.com/css?family=Muli&display=swap');
+
+body{
+  background-color: darksalmon;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
