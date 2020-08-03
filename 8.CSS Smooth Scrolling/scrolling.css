@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap');
+
+html{
+  scroll-behavior: smooth;  /****/
+}
+body{
+  font-family: 'Open Sane',sans-serif;
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  
+}
+nav a{
+  border: 4px solid #fff;
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+section{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/** ":nth-of-type(n)" chọn thành phần thứ "n", gốc tính được tính từ thành phần đầu tiên trở đi. **/
+#page-1, nav a:nth-of-type(1) {
+	background-color: #2ecc71;
+}
+#page-2, nav a:nth-of-type(2) {
+	background-color: #e74c3c;
+}
+#page-3, nav a:nth-of-type(3) {
+	background-color: #2980b9;
+}
+
+#page-4, nav a:nth-of-type(4) {
+	background-color: #8e44ad;
+}
+
