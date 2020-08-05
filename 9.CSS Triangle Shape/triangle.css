@@ -1,0 +1,18 @@
+body{
+  background-image: radial-gradient(circle 360px at 50% 50%,rgba(54,96,172,1) 0%, rgba(46,53,89,1) 100.2%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  
+}
+.element{
+  border: 70px solid transparent; 
+  /*
+    mỗi viền border có kích thước 70px.
+    transparent: viền màu border trong suốt.
+  */
+  border-left-color: purple; 
+  border-right-color: purple; 
+}
