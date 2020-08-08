@@ -13,3 +13,4 @@ function updateVisitCount() {
 		countEl.innerHTML = res.value;  // lấy value để add vào id
 	})
 }
+var a=;
