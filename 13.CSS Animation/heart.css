@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  .heart{
+    background: purple;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    transform: rotate(-45deg);
+  }
+  
+  .heart::after{
+    background: inherit;
+    /* kế thừa thuộc tính của các phần tử cha gần nó nhất (parent element)*/
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+    content:'';
+    position: absolute;
+    top: -50px;
+    left: 0;
+  }
+  .heart::before{
+    background: inherit;
+    /* kế thừa thuộc tính của các phần tử cha gần nó nhất (parent element)*/
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+    content:'';
+    position: absolute;
+    top: 0;
+    right: -50%;
+  }
